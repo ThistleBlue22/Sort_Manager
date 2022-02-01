@@ -12,21 +12,27 @@ public class SortManager {
         ArrayList<Integer> intArray = new ArrayList<>();
 
         Random random = new Random();
-        //int range = random.nextInt(10);
+        //int range = random.nextInt(100);
 
         for (int j = 0; j < 10; j++){
             intArray.add(random.nextInt(100));
         }
 
-        int[] intList = new int[intArray.size()];
+        ArrayList<Integer> bubbleSortArray = (ArrayList<Integer>) intArray.clone();
+        ArrayList<Integer> mergeSortArray = (ArrayList<Integer>) intArray.clone();
 
-        for (int i = 0; i < intArray.size(); i++){
-            intList[i] = intArray.get(i);
-        }
 
-        System.out.println(intArray);
-        System.out.println(sm.bubbleSort(intArray));
-        System.out.println(Arrays.toString(sm.mergeSort(intList)));
+
+//        int[] intList = new int[intArray.size()];
+//
+//        for (int i = 0; i < intArray.size(); i++){
+//            intList[i] = intArray.get(i);
+//        }
+
+        System.out.println("Original:                     " + intArray);
+        System.out.println("Bubble Sort Return:           " + sm.bubbleSort(bubbleSortArray));
+        System.out.println("Array List Merge Sort Return: " + sm.mergeSort(mergeSortArray));
+        //System.out.println("int[] Merge Sort Return:      " + Arrays.toString(sm.mergeSort(intList)));
 
     }
 
@@ -50,64 +56,126 @@ public class SortManager {
 
     }
 
-    public int[] mergeSort(int[] mergeSortList){
-        if (mergeSortList.length == 1){
-            return mergeSortList;
+    public ArrayList<Integer> mergeSort(ArrayList<Integer> mergeSortArray){
+        int arrayLength = mergeSortArray.size();
+
+        if (arrayLength == 1){
+            return mergeSortArray;
         }
 
-        int lengthOfList = mergeSortList.length;
-
-        int midIndex = lengthOfList/2;
-        int[] arrayOne = new int[lengthOfList/2];
-        int[] arrayTwo = new int[lengthOfList - midIndex];
+        int midIndex = arrayLength / 2;
+        ArrayList<Integer> leftArray = new ArrayList<>();
+        ArrayList<Integer> rightArray = new ArrayList<>();
 
         for (int i = 0; i < midIndex; i++){
-            arrayOne[i] = mergeSortList[i];
+            leftArray.add(mergeSortArray.get(i));
         }
-        for (int i = midIndex; i < lengthOfList; i++){
-            arrayTwo[i - midIndex] = mergeSortList[i];
+        for (int i = midIndex; i < arrayLength; i++){
+            rightArray.add(mergeSortArray.get(i));
         }
 
-        mergeSort(arrayOne);
-        mergeSort(arrayTwo);
+        mergeSort(leftArray);
+        mergeSort(rightArray);
 
-        return (merge(mergeSortList, arrayOne, arrayTwo));
-
+        return (merge(leftArray, rightArray));
 
     }
-    private static int[] merge(int[] inputArray, int[] arrayOne, int[] arrayTwo){
-        int arrayOneSize = arrayOne.length;
-        int arrayTwoSize = arrayTwo.length;
+
+    private static ArrayList<Integer> merge(ArrayList<Integer> leftArray, ArrayList<Integer> rightArray){
+
+        ArrayList<Integer> returnMergeArray = new ArrayList<>();
+
+        int leftArraySize= leftArray.size();
+        int rightArraySize = rightArray.size();
 
         int i = 0, j = 0, k = 0;
 
-        while (i < arrayOneSize && j < arrayTwoSize){
-            if (arrayOne[i] <= arrayTwo[j]){
-                inputArray[k] = arrayOne[i];
+        while (i < leftArraySize && j < rightArraySize){
+            if (leftArray.get(i) <= rightArray.get(j)){
+                returnMergeArray.add(k, leftArray.get(i));
                 i++;
             }
             else{
-                inputArray[k] = arrayTwo[j];
+                returnMergeArray.add(k, rightArray.get(j));
                 j++;
             }
             k++;
         }
 
-        while (i < arrayOneSize){
-            inputArray[k] = arrayOne[i];
+        while (i < leftArraySize){
+            returnMergeArray.add(k, leftArray.get(i));
             i++;
-            k++;
         }
-
-        while (j < arrayTwoSize){
-            inputArray[k] = arrayTwo[j];
+        while (j < rightArraySize){
+            returnMergeArray.add(k, rightArray.get(j));
             j++;
-            k++;
         }
 
-        return inputArray;
+        return returnMergeArray;
     }
+
+//    public int[] mergeSort(int[] mergeSortList){
+//        if (mergeSortList.length == 1){
+//            return mergeSortList;
+//        }
+//
+//        int lengthOfList = mergeSortList.length;
+//
+//        int midIndex = lengthOfList/2;
+//        int[] arrayOne = new int[lengthOfList/2];
+//        int[] arrayTwo = new int[lengthOfList - midIndex];
+//
+//        for (int i = 0; i < midIndex; i++){
+//            arrayOne[i] = mergeSortList[i];
+//        }
+//        for (int i = midIndex; i < lengthOfList; i++){
+//            arrayTwo[i - midIndex] = mergeSortList[i];
+//        }
+//
+//        mergeSort(arrayOne);
+//        mergeSort(arrayTwo);
+//
+//        return (merge(mergeSortList, arrayOne, arrayTwo));
+//
+//
+//    }
+//
+//    private static int[] merge(int[] inputArray, int[] arrayOne, int[] arrayTwo){
+//        int arrayOneSize = arrayOne.length;
+//        int arrayTwoSize = arrayTwo.length;
+//
+//        int i = 0, j = 0, k = 0;
+//
+//        while (i < arrayOneSize && j < arrayTwoSize){
+//            if (arrayOne[i] <= arrayTwo[j]){
+//                inputArray[k] = arrayOne[i];
+//                i++;
+//            }
+//            else{
+//                inputArray[k] = arrayTwo[j];
+//                j++;
+//            }
+//            k++;
+//        }
+//
+//        while (i < arrayOneSize){
+//            inputArray[k] = arrayOne[i];
+//            i++;
+//            k++;
+//        }
+//
+//        while (j < arrayTwoSize){
+//            inputArray[k] = arrayTwo[j];
+//            j++;
+//            k++;
+//        }
+//
+//        return inputArray;
+//    }
+
+
     // Impossible without the help of this video https://www.youtube.com/watch?v=bOk35XmHPKs
     // Somehow got the right merge but messed up the split to begin with
+
 
 }
