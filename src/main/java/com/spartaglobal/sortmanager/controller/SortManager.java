@@ -10,15 +10,16 @@ import java.util.Random;
 
 public class SortManager {
 
-    public int[] initiateSorting(String desiredSortingMethod){
+    public int[] initiateSorting(String desiredSortingMethod, int[] integerList){
 
-        Random random = new Random();
-        int range = random.nextInt(100);
+        int [] intArray = new int[integerList.length];
 
-        int[] intArray = new int[range];
-
-        for (int j = 0; j < range; j++){
-            intArray[j] = random.nextInt(1000);
+        if (integerList.length == 0){
+            System.out.println("The length of the array needs to have at least one number to function");
+            return (integerList);
+        }
+        if (integerList[0] == 0){
+            intArray = randomNumber(integerList);
         }
 
         Sort s = getSortType(desiredSortingMethod);
@@ -33,6 +34,17 @@ public class SortManager {
         };
 
         return sf.getInstance();
+    }
+
+    public int[] randomNumber(int[] intArray){
+        int range = intArray.length;
+
+        Random random = new Random();
+
+        for (int j = 0; j < range; j++){
+            intArray[j] = random.nextInt(1000);
+        }
+        return intArray;
     }
 
 }
