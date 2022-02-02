@@ -27,10 +27,14 @@ public class SortManager {
     }
 
     public Sort getSortType(String sortType){
+
+
         SortFactory sf = switch (sortType.toLowerCase()){
             case "bubble" -> new BubbleSortFactory();
             case "merge" -> new MergeSortFactory();
             default -> new BubbleSortFactory();
+
+
         };
 
         return sf.getInstance();

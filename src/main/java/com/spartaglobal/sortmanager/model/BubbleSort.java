@@ -1,7 +1,5 @@
 package com.spartaglobal.sortmanager.model;
 
-import java.util.ArrayList;
-
 public class BubbleSort implements Sort{
     public int[] sort(int[] unorganisedArray){
         int lengthOfList = unorganisedArray.length;
