@@ -11,7 +11,10 @@ public class SortFactoryMain {
         String desiredSortType = sv.getDesiredSort();
         SortManager sm = new SortManager();
         Random random = new Random();
-        int[] newIntList = new int[1];
+        int[] newIntList = new int[random.nextInt(100)];
+        for (int i = 0; i < newIntList.length; i++){
+            newIntList[i] = random.nextInt(1000);
+        }
         int[] result = sm.initiateSorting(desiredSortType, newIntList);
         sv.displayResults(result);
     }

@@ -12,18 +12,18 @@ public class SortManager {
 
     public int[] initiateSorting(String desiredSortingMethod, int[] integerList){
 
-        int [] intArray = new int[integerList.length];
+
 
         if (integerList.length == 0){
             System.out.println("The length of the array needs to have at least one number to function");
             return (integerList);
         }
         if (integerList[0] == 0){
-            intArray = randomNumber(integerList);
+            integerList = randomNumber(integerList);
         }
 
         Sort s = getSortType(desiredSortingMethod);
-        return s.sort(intArray);
+        return s.sort(integerList);
     }
 
     public Sort getSortType(String sortType){
