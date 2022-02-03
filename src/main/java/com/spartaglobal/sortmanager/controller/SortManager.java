@@ -1,11 +1,10 @@
 package com.spartaglobal.sortmanager.controller;
 
-import com.spartaglobal.sortmanager.model.BubbleSortFactory;
-import com.spartaglobal.sortmanager.model.MergeSortFactory;
-import com.spartaglobal.sortmanager.model.Sort;
-import com.spartaglobal.sortmanager.model.SortFactory;
+import com.spartaglobal.sortmanager.SortFactoryMain;
+import com.spartaglobal.sortmanager.model.*;
 
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class SortManager {
@@ -23,6 +22,7 @@ public class SortManager {
         }
 
         Sort s = getSortType(desiredSortingMethod);
+        SortFactoryMain.logger.debug("The unsolved array: " + Arrays.toString(integerList));
         return s.sort(integerList);
     }
 
@@ -32,6 +32,7 @@ public class SortManager {
         SortFactory sf = switch (sortType.toLowerCase()){
             case "bubble" -> new BubbleSortFactory();
             case "merge" -> new MergeSortFactory();
+            case "bst" -> new BinarySearchTreeFactory();
             default -> new BubbleSortFactory();
 
 

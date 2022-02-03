@@ -1,6 +1,6 @@
 package com.spartaglobal.sortmanager.view;
 
-import com.spartaglobal.sortmanager.model.NegativeInputException;
+import com.spartaglobal.sortmanager.SortFactoryMain;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class SortView {
     public String getDesiredSort(){
-        System.out.print("Please enter your desired Sorting Algorithm. The available Algorithms are currently Bubble and Merge --> ");
+        System.out.print("Please enter your desired Sorting Algorithm. The available Algorithms are currently Bubble, Merge and Binary Search Tree --> ");
         Scanner scanner = new Scanner(System.in);
         return scanner.next();
     }
@@ -39,7 +39,12 @@ public class SortView {
         return number;
     }
 
-    public void displayResults(int[] intArray){
-        System.out.println(Arrays.toString(intArray));
+    public void displayResults(int[] intArray, long oldTime){
+        long currentTime = System.nanoTime();
+
+        long timeToCompletion = currentTime-oldTime;
+        SortFactoryMain.logger.debug("The solved array: " + Arrays.toString(intArray));
+        SortFactoryMain.logger.debug("The sort took " + timeToCompletion + " total nanoseconds");
+        System.out.println("The solved array: " + Arrays.toString(intArray));
     }
 }
