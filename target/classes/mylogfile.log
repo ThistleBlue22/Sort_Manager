@@ -1,1 +1,16 @@
 
+FILE [DEBUG] 2022-02-04 12:18:54,370 main Sorting Project - The chosen sorter is Bubble
+FILE [DEBUG] 2022-02-04 12:18:54,410 main Sorting Project - The unsolved array: [267, 184, 550, 378, 535, 738, 114, 835, 514, 11]
+FILE [DEBUG] 2022-02-04 12:18:54,410 main Sorting Project - The solved array: [11, 114, 184, 267, 378, 514, 535, 550, 738, 835]
+FILE [DEBUG] 2022-02-04 12:18:54,412 main Sorting Project - The sort took 42197100 total nanoseconds
+
+FILE [DEBUG] 2022-02-04 12:19:21,338 main Sorting Project - The chosen sorter is Merge
+FILE [DEBUG] 2022-02-04 12:19:21,339 main Sorting Project - The unsolved array: [9, 313, 343, 450, 774, 24, 640, 947, 579, 940]
+FILE [DEBUG] 2022-02-04 12:19:21,339 main Sorting Project - The solved array: [9, 24, 313, 343, 450, 579, 640, 774, 940, 947]
+FILE [DEBUG] 2022-02-04 12:19:21,339 main Sorting Project - The sort took 1164300 total nanoseconds
+
+FILE [DEBUG] 2022-02-04 12:19:29,138 main Sorting Project - The chosen sorter is Binary Search Tree
+FILE [DEBUG] 2022-02-04 12:19:29,139 main Sorting Project - The unsolved array: [62, 802, 583, 373, 456, 985, 855, 165, 224, 92]
+FILE [DEBUG] 2022-02-04 12:19:29,139 main Sorting Project - The solved array: [62, 92, 165, 224, 373, 456, 583, 802, 855, 985]
+FILE [DEBUG] 2022-02-04 12:19:29,139 main Sorting Project - The sort took 1540500 total nanoseconds
+FILE [DEBUG] 2022-02-04 12:19:31,463 main Sorting Project - Exiting. . .
