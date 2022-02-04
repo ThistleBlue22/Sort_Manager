@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class SortManager {
 
-    public int[] initiateSorting(String desiredSortingMethod, int[] integerList){
+    public int[] initiateSorting(int desiredSortingMethod, int[] integerList){
 
 
 
@@ -26,19 +26,27 @@ public class SortManager {
         return s.sort(integerList);
     }
 
-    public Sort getSortType(String sortType){
+    public Sort getSortType(int sortType){
 
+        switch (sortType){
+            case 1 -> SortFactoryMain.logger.debug("The chosen sorter is Bubble");
+            case 2 -> SortFactoryMain.logger.debug("The chosen sorter is Merge");
+            case 3 -> SortFactoryMain.logger.debug("The chosen sorter is Binary Search Tree");
+        }
 
-        SortFactory sf = switch (sortType.toLowerCase()){
-            case "bubble" -> new BubbleSortFactory();
-            case "merge" -> new MergeSortFactory();
-            case "bst" -> new BinarySearchTreeFactory();
-            default -> new BubbleSortFactory();
-
-
+        SortFactory sf = switch (sortType){
+            case 1 -> new BubbleSortFactory();
+            case 2 -> new MergeSortFactory();
+            case 3 -> new BinarySearchTreeFactory();
+            default -> null;
         };
 
+        if (sf == null){
+            System.exit(0);
+        }
+
         return sf.getInstance();
+
     }
 
     public int[] randomNumber(int[] intArray){

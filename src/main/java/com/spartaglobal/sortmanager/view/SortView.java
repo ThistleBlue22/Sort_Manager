@@ -7,10 +7,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class SortView {
-    public String getDesiredSort(){
-        System.out.print("Please enter your desired Sorting Algorithm. The available Algorithms are currently Bubble, Merge and Binary Search Tree --> ");
+    public int getDesiredSort(){
+        System.out.println("Please select your desired Sorting Algorithm (Please choose one at a time)");
+        System.out.println("1. Bubble");
+        System.out.println("2. Merge");
+        System.out.println("3. Binary Search Tree");
         Scanner scanner = new Scanner(System.in);
-        return scanner.next();
+        return scanner.nextInt();
     }
 
     public int getDesiredArraySize(){
@@ -26,7 +29,6 @@ public class SortView {
             }
             catch (NumberFormatException e){
                 e.printStackTrace();
-                System.out.println("(==============================================================)");
                 System.err.println("That was an incorrect number, please provide a full integer with no decimal place and no letters!".toUpperCase());
                 System.exit(0);
             }
@@ -46,5 +48,20 @@ public class SortView {
         SortFactoryMain.logger.debug("The solved array: " + Arrays.toString(intArray));
         SortFactoryMain.logger.debug("The sort took " + timeToCompletion + " total nanoseconds");
         System.out.println("The solved array: " + Arrays.toString(intArray));
+        System.out.println("Would you like to run the program again?");
+        Scanner scanner = new Scanner(System.in);
+        String continueExecution = scanner.next();
+        String[] args = new String[0];
+        boolean doRepeat = false;
+        do {
+            if ("yes".equalsIgnoreCase(continueExecution)){
+                doRepeat = true;
+                SortFactoryMain.main(args);
+            }
+            else{
+                SortFactoryMain.logger.debug("Exiting. . .");
+                System.exit(0);
+            }
+        }while (doRepeat);
     }
 }

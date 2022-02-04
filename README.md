@@ -1,5 +1,21 @@
 # Sort_Manager
-A program with the intention of creating an evolving application with learned practises throughout a course on Java and Software Development and Design Practises.
+## Summary
+
+The main goal of this project is to implement the Java Design
+
+## Required Setup
+
+Initially the project was created in Intellij IDEA with the Maven option provided upon creating a new file.
+
+![image-20220204115305011](C:\Users\wiico\AppData\Roaming\Typora\typora-user-images\image-20220204115305011.png)
+
+This allowed the project to contain access to dependencies made easier to access and include.
+
+
+
+
+
+
 
 ## *Table of Contents*
 
@@ -22,4 +38,28 @@ The main reason for this project being split into Phases is to develop increment
 Incrementally including newly learned functions, practises and packages to improve the input, output and overall outcome of the project and program.
 
 
+
+
+
+# Phase 1
+
+In the beginning, the requirements were to create two sorting algorithms - Bubble and Merge. Implement these and test them. This implementation was both a simple implementation of the features in the same file that allowed the creation of a random sized array of Integers:
+
+![image-20220204134600501](C:\Users\wiico\AppData\Roaming\Typora\typora-user-images\image-20220204134600501.png)
+
+
+
+# Phase 2
+
+
+
+# Phase 3
+
+
+
+# Phase 4
+
+In phase four the implementation of the Logging with the Log4J package took place and included outputting similar lines to a file as those seen in the image below. Interested in the information that was going through the file, the chosen sorter was included to begin with, following it up with the unsolved array and the solved array. Finally in the line of logs for each sorter passthrough the time it took to complete the sort in nanoseconds. 
+
+![image-20220204122232449](C:\Users\wiico\AppData\Roaming\Typora\typora-user-images\image-20220204122232449.png)
 
