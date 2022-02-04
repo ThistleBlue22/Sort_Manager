@@ -32,18 +32,20 @@ public class SortManager {
             case 1 -> SortFactoryMain.logger.debug("The chosen sorter is Bubble");
             case 2 -> SortFactoryMain.logger.debug("The chosen sorter is Merge");
             case 3 -> SortFactoryMain.logger.debug("The chosen sorter is Binary Search Tree");
-        }
+        } // Depending on user input it outputs which Algorithm is chosen.
 
         SortFactory sf = switch (sortType){
             case 1 -> new BubbleSortFactory();
             case 2 -> new MergeSortFactory();
             case 3 -> new BinarySearchTreeFactory();
             default -> null;
-        };
+        }; // Sets sf to a specific Sort Factory, null if no cases are met
 
         if (sf == null){
+            // SortFactoryMain.logger.debug("Invalid option entered. Quitting..");
+            System.out.println("The option you chose is unavailable. Please try again with a valid option. Quitting..");
             System.exit(0);
-        }
+        } // if sf comes back as null the program, and displays the reason. Can change to a log message.
 
         return sf.getInstance();
 
