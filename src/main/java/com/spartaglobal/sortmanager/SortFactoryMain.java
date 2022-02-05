@@ -23,6 +23,7 @@ public class SortFactoryMain {
             sv.displayResults(result, currentTime);
         }
         catch (NegativeArraySizeException e){
+            logger.error("The input data does not conform to the requirements of the program. Exiting..");
             throw new NegativeInputException("NUMBERS CANNOT BE NEGATIVE", e);
         }
 

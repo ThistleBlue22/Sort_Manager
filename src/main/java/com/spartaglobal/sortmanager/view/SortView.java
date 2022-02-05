@@ -44,9 +44,9 @@ public class SortView {
     public void displayResults(int[] intArray, long oldTime){
         long currentTime = System.nanoTime();
 
-        long timeToCompletion = currentTime-oldTime;
+        double timeToCompletion = (currentTime-oldTime) / 1000000000.00;
         SortFactoryMain.logger.debug("The solved array: " + Arrays.toString(intArray));
-        SortFactoryMain.logger.debug("The sort took " + timeToCompletion + " total nanoseconds");
+        SortFactoryMain.logger.debug("The sort took " + timeToCompletion + " total seconds \n");
         System.out.println("The solved array: " + Arrays.toString(intArray));
         System.out.println("Would you like to run the program again?");
         Scanner scanner = new Scanner(System.in);
@@ -59,7 +59,7 @@ public class SortView {
                 SortFactoryMain.main(args);
             }
             else{
-                SortFactoryMain.logger.debug("Exiting. . .");
+                SortFactoryMain.logger.debug("Exiting. . . \n");
                 System.exit(0);
             }
         }while (doRepeat);

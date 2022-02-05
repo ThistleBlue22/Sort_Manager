@@ -5,33 +5,29 @@ import java.util.ArrayList;
 
 public class BinarySearchTree implements Sort {
 
-    private static ArrayList<Integer> treetoArrayList(Node root, ArrayList<Integer> list) {
+    private static ArrayList<Integer> treeToArrayList(Node root, ArrayList<Integer> list) {
         if (root == null)
             return list;
-        treetoArrayList(root.left, list);
+        treeToArrayList(root.left, list);
         list.add(root.data);
-        treetoArrayList(root.right, list);
+        treeToArrayList(root.right, list);
         return list;
-
     }
 
     private static Node insert(Node root, int data) {
         if (root == null) {
             return new Node(data);
-
         }
-
         if (data < root.data) {
             root.left = insert(root.left, data);
         }
         if (data > root.data) {
             root.right = insert(root.right, data);
         }
-
         return root;
     }
 
-    //Data structure to store a Binary Search Tree node
+    // Data structure to store a Binary Search Tree node
     static class Node {
         int data;
         Node left = null, right = null;
@@ -49,7 +45,7 @@ public class BinarySearchTree implements Sort {
         }
         ArrayList<Integer> integers = new ArrayList<>();
 
-        treetoArrayList(root, integers);
+        treeToArrayList(root, integers);
 
         int[] ints = new int[integers.size()];
 
