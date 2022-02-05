@@ -57,7 +57,7 @@ public class SortManager {
         Random random = new Random();
 
         for (int j = 0; j < range; j++){
-            intArray[j] = random.nextInt(1000);
+            intArray[j] = random.nextInt(10);
         }
         return intArray;
     }

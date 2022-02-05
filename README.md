@@ -65,7 +65,7 @@ Implementation of testing happened throughout the project but started early and 
 
 ![image-20220205155207405](C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220205155207405.png)
 
-In Phase 2 the plan of action was to refactor the code into Model View Controller 
+In Phase 2 the plan of action was to refactor the code into Model View Controller and utilises the Factory Design Pattern to create a modular systems that allowed the addition of new features in the form of new Sort subclasses. 
 
 # Phase 3
 
