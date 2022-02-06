@@ -27,7 +27,7 @@ The user would select Generate.. => Dependency and then search for Jupiter for J
 
 ## *Table of Contents*
 
-1. [Phases, Reasons for Creation and Goals](#1.-Phase,-Reasons-for-Creation-and-Goals)
+1. [Phases, Reasons for Creation and Goals](#phase-reasons-for-creation-and-goals)
 
 2. [Phase 1](#Phase-1)
 3. [Phase 2](#Phase-2)
@@ -39,7 +39,7 @@ The user would select Generate.. => Dependency and then search for Jupiter for J
 
 
 
-# 1. Phase, Reasons for Creation and Goals
+# Phase, Reasons for Creation and Goals
 
 The main reason for this project being split into Phases is to develop incrementally over the span of a week in order to learn and understand the various way of implementing features.
 
