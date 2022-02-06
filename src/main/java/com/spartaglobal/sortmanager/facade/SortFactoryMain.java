@@ -1,4 +1,4 @@
-package com.spartaglobal.sortmanager;
+package com.spartaglobal.sortmanager.facade;
 
 import com.spartaglobal.sortmanager.controller.SortManager;
 import com.spartaglobal.sortmanager.model.NegativeInputException;

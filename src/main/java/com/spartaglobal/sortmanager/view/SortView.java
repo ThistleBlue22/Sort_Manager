@@ -1,6 +1,6 @@
 package com.spartaglobal.sortmanager.view;
 
-import com.spartaglobal.sortmanager.SortFactoryMain;
+import com.spartaglobal.sortmanager.facade.SortFactoryMain;
 
 import java.util.Arrays;
 import java.util.Random;

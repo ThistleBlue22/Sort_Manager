@@ -1,7 +1,9 @@
 # Sort_Manager
 ## Summary
 
-The main goal of this project is to implement the Java Design Patterns
+The main goal of this project is to implement the MVC formatting of files within a program and the Factory Java Design Pattern to ensure the expansion of the program could be a quick and easy change of a file and addition of a few files without the need to change the whole structure each time.
+
+Below is the setup and stages this project took, from the inception of the project through to logging, addition of a new sorting algorithm and timing the sorts in seconds.
 
 ## Required Setup
 
@@ -21,21 +23,15 @@ The user would select Generate.. => Dependency and then search for Jupiter for J
 
 
 
-
-
-
-
 ## *Table of Contents*
 
 1. [Phases, Reasons for Creation and Goals](#phase-reasons-for-creation-and-goals)
-
 2. [Phase 1](#Phase-1)
 3. [Phase 2](#Phase-2)
 4. [Phase 3](#Phase-3)
 5. [Phase 4](#Phase-4)
 6. [Phase 5](#Phase-5)
-7. [Final Conclusions](#Final-Conclusions)
-8. [Using the Software](#Using-the-Software)
+7. [Testing](#Testing)
 
 
 

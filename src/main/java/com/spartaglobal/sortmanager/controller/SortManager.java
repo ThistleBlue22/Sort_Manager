@@ -1,6 +1,6 @@
 package com.spartaglobal.sortmanager.controller;
 
-import com.spartaglobal.sortmanager.SortFactoryMain;
+import com.spartaglobal.sortmanager.facade.SortFactoryMain;
 import com.spartaglobal.sortmanager.model.*;
 
 import java.util.Arrays;
