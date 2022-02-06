@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 FILE [DEBUG] 2022-02-05 22:24:00,855 main Sorting Project - The chosen sorter is Binary Search Tree
 FILE [DEBUG] 2022-02-05 22:24:00,859 main Sorting Project - The unsolved array: [604, 981, 983, 112, 504, 222, 181, 562, 372, 878]
 FILE [DEBUG] 2022-02-05 22:24:00,860 main Sorting Project - The solved array: [112, 181, 222, 372, 504, 562, 604, 878, 981, 983]
@@ -11,4 +12,6 @@ FILE [DEBUG] 2022-02-05 22:24:57,543 main Sorting Project - The solved array: [0
 FILE [DEBUG] 2022-02-05 22:24:57,545 main Sorting Project - The sort took 0.0102549 total seconds 
 
 FILE [DEBUG] 2022-02-05 22:25:14,038 main Sorting Project - Exiting. . . 
+=======
+>>>>>>> Stashed changes
 
