@@ -3,15 +3,12 @@ package com.spartaglobal.sortmanager.controller;
 import com.spartaglobal.sortmanager.SortFactoryMain;
 import com.spartaglobal.sortmanager.model.*;
 
-
 import java.util.Arrays;
 import java.util.Random;
 
 public class SortManager {
 
     public int[] initiateSorting(int desiredSortingMethod, int[] integerList){
-
-
 
         if (integerList.length == 0){
             System.out.println("The length of the array needs to have at least one number to function");
@@ -57,7 +54,7 @@ public class SortManager {
         Random random = new Random();
 
         for (int j = 0; j < range; j++){
-            intArray[j] = random.nextInt(10);
+            intArray[j] = random.nextInt(1000) + 1;
         }
         return intArray;
     }

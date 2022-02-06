@@ -1,17 +1,7 @@
-<<<<<<< Updated upstream
-FILE [DEBUG] 2022-02-05 22:24:00,855 main Sorting Project - The chosen sorter is Binary Search Tree
-FILE [DEBUG] 2022-02-05 22:24:00,859 main Sorting Project - The unsolved array: [604, 981, 983, 112, 504, 222, 181, 562, 372, 878]
-FILE [DEBUG] 2022-02-05 22:24:00,860 main Sorting Project - The solved array: [112, 181, 222, 372, 504, 562, 604, 878, 981, 983]
-FILE [DEBUG] 2022-02-05 22:24:00,862 main Sorting Project - The sort took 0.0118966 total seconds 
+FILE [DEBUG] 2022-02-06 13:49:11,917 Sorting Project - The chosen sorter is Binary Search Tree
+FILE [DEBUG] 2022-02-06 13:49:11,920 Sorting Project - The unsolved array: [984, 789, 941, 594]
+FILE [DEBUG] 2022-02-06 13:49:11,920 Sorting Project - The solved array: [594, 789, 941, 984]
+FILE [DEBUG] 2022-02-06 13:49:11,921 Sorting Project - The sort took 0.0052555 total seconds 
 
-FILE [DEBUG] 2022-02-05 22:24:29,784 main Sorting Project - Exiting. . . 
-
-FILE [DEBUG] 2022-02-05 22:24:57,538 main Sorting Project - The chosen sorter is Binary Search Tree
-FILE [DEBUG] 2022-02-05 22:24:57,542 main Sorting Project - The unsolved array: [1, 8, 3, 2, 8, 0, 5, 8, 8, 3, 1, 7, 5, 6, 0, 3, 4, 4, 7, 2, 6, 6, 9, 0, 0, 8, 8, 9, 0, 5, 0, 3, 4, 3, 9, 7, 3, 0, 5, 1, 1, 4, 0, 7, 3, 9, 4, 7, 1, 1, 4, 0, 5, 7, 2, 3, 7, 9, 2, 6, 1, 8, 6, 1, 0, 3, 4, 3, 6, 1, 6, 8, 8, 8, 0, 3, 6, 1, 8, 8, 7, 0, 5, 9, 1, 6, 4, 2, 9, 3, 0, 8, 6, 8, 6, 6, 7, 1, 6, 2]
-FILE [DEBUG] 2022-02-05 22:24:57,543 main Sorting Project - The solved array: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9]
-FILE [DEBUG] 2022-02-05 22:24:57,545 main Sorting Project - The sort took 0.0102549 total seconds 
-
-FILE [DEBUG] 2022-02-05 22:25:14,038 main Sorting Project - Exiting. . . 
-=======
->>>>>>> Stashed changes
+FILE [DEBUG] 2022-02-06 13:49:14,577 Sorting Project - Exiting. . . 
 

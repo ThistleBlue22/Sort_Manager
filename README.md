@@ -9,7 +9,15 @@ Initially the project was created in Intellij IDEA with the Maven option provide
 
 ![image-20220204115305011](C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220204115305011.png)
 
-This allowed the project to contain access to dependencies made easier to access and include.
+This allowed the project to contain access to dependencies made easier to access and include. While discussing the dependencies required for this project, the two main dependencies were JUnit or Jupiter for testing and Log4J for the logging. Everything else was done with the base install of the OpenJDK package.
+
+To access the dependencies and import them into the project the user must access the pom.xml file created upon the selection and naming of the Maven project shown above. From within the pom.xml file the user must right click within the <project> </project> area within the file. The left image displays what would pop up.
+
+![image-20220206151544136](C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220206151544136.png)![image-20220206151657299](C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220206151657299.png)
+
+The user would select Generate.. => Dependency and then search for Jupiter for JUnit or Log4J for Logging. This brings up the available packages. Ensure that the correct one is selected and click on "Add".
+
+<img src="C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220206152122045.png" alt="image-20220206152122045"  /><img src="C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220206152349409.png" alt="image-20220206152349409"  />
 
 
 
@@ -36,6 +44,8 @@ This allowed the project to contain access to dependencies made easier to access
 The main reason for this project being split into Phases is to develop incrementally over the span of a week in order to learn and understand the various way of implementing features.
 
 Incrementally including newly learned functions, practises and packages to improve the input, output and overall outcome of the project and program.
+
+Below the individual Phases can be found and quickly accessed with the [Table of Contents](#Table-of-Contents) above! Throughout there is reference to the features, and at the end is all the testing once all features were implemented.
 
 
 
@@ -99,3 +109,34 @@ The image also shows a more refined logging practise, showing everything that wa
 
 # Testing
 
+The testing was mostly performed on the Sorts and as such a method to achieve a sorted list of the Integers needed to be implemented in each test. The below image shows the code that a copy of the arrays were run against to get a sorted list for comparison.
+
+![image-20220206135350043](C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220206135350043.png)
+
+The Testing was done from two angles, the features and the number generator.
+
+## First, the number generator:
+
+![image-20220206141309512](C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220206141309512.png)
+
+All that was really possible with the testing of the number generator was to find if the returned array kept the same size throughout the addition of the random numbers in the SortManager.
+
+## Second, the features:
+
+The testing of the features also required access to the random number generator that was tested above.
+
+The way that the tests are constructed allowed them to be used throughout the different tests for the features. Each returned a pass on each test provided, meaning that they all function correctly.
+
+Each test file accesses the basic features, running against a small array list, a large array list. A list that isn't randomly generated and a bunch of edge cases that confirm the proper functionality of the program.
+
+### Bubble Sort Testing
+
+![image-20220206150815308](C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220206150815308.png)
+
+### Merge Sort Testing
+
+![image-20220206150848414](C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220206150848414.png)
+
+### Binary Search Tree Testing
+
+![image-20220206150916364](C:\Users\wiico\Documents\GitHub\Sort_Manager\src\main\resources\images\image-20220206150916364.png)

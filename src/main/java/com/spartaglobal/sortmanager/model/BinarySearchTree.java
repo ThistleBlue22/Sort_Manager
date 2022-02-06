@@ -1,7 +1,10 @@
 package com.spartaglobal.sortmanager.model;
 
 
+import com.spartaglobal.sortmanager.controller.SortManager;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class BinarySearchTree implements Sort {
 
@@ -18,7 +21,7 @@ public class BinarySearchTree implements Sort {
         if (root == null) {
             return new Node(data);
         }
-        if (data < root.data) {
+        if (data <= root.data) {
             root.left = insert(root.left, data);
         }
         if (data > root.data) {
@@ -39,6 +42,7 @@ public class BinarySearchTree implements Sort {
 
     @Override
     public int[] sort(int[] intArray) {
+
         Node root = null;
         for (int i : intArray){
             root = insert(root, i);
