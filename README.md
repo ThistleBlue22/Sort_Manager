@@ -136,3 +136,9 @@ Each test file accesses the basic features, running against a small array list, 
 ### Binary Search Tree Testing
 
 ![image-20220206150916364](https://github.com/ThistleBlue22/Sort_Manager/blob/master/src/main/resources/images/image-20220206150916364.png)
+
+## Coverage
+
+Overall the coverage is widespread, catching most lines and all classes.
+
+![Coverage](https://github.com/ThistleBlue22/Sort_Manager/blob/master/src/main/resources/images/unknown.png)
