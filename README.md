@@ -141,6 +141,4 @@ Each test file accesses the basic features, running against a small array list, 
 
 Overall the coverage is widespread, catching most lines and all classes.
 
-![Test](https://imgur.com/a/PdSyBul)
-
 ![Coverage](https://github.com/ThistleBlue22/Sort_Manager/blob/master/src/main/resources/images/unknown.png)
